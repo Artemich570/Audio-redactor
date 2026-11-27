@@ -1,0 +1,281 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AudioEditor.Views.MainWindow"
+        Title="AudioEditor"
+        Width="1100"
+        Height="720"
+        MinWidth="900"
+        MinHeight="600"
+        Background="#1E1E1E">
+
+    <Window.Styles>
+
+        <!-- Стиль кнопок -->
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#444444"/>
+            <Setter Property="Padding" Value="12,7"/>
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="#454545"/>
+        </Style>
+
+        <!-- Стиль текста -->
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="#EEEEEE"/>
+        </Style>
+
+
+    </Window.Styles>
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*,Auto,Auto">
+
+        <!-- 1. Главное меню -->
+        <Menu Grid.Row="0"
+              Background="#252526">
+
+            <MenuItem Header="Файл">
+
+                <MenuItem Header="Открыть..."
+                          Click="OpenFile_Click"/>
+
+                <MenuItem Header="Экспорт..."
+                          Click="ExportFile_Click"/>
+
+                <Separator/>
+
+                <MenuItem Header="Выход"/>
+
+            </MenuItem>
+
+            <MenuItem Header="Правка">
+
+                <MenuItem Header="Обрезать"
+                          Click="Cut_Click"/>
+
+                <MenuItem Header="Fade In"
+                          Click="FadeIn_Click"/>
+
+                <MenuItem Header="Fade Out"
+                          Click="FadeOut_Click"/>
+
+            </MenuItem>
+
+            <MenuItem Header="Вид"/>
+
+            <MenuItem Header="Справка"/>
+
+        </Menu>
+
+        <!-- 2. Панель инструментов -->
+        <Border Grid.Row="1"
+                Background="#292929"
+                Padding="5">
+
+            <StackPanel Orientation="Horizontal">
+
+                <Button Content="Открыть"
+                        Click="OpenFile_Click"/>
+
+                <Button Content="Экспорт"
+                        Click="ExportFile_Click"/>
+
+                <Separator/>
+
+                <Button Content="Обрезать"
+                        Click="Cut_Click"/>
+
+                <Button Content="Fade In"
+                        Click="FadeIn_Click"/>
+
+                <Button Content="Fade Out"
+                        Click="FadeOut_Click"/>
+
+            </StackPanel>
+
+        </Border>
+
+        <!-- 3. Панель воспроизведения -->
+        <Border Grid.Row="2"
+                Background="#252526"
+                Padding="8">
+
+            <Grid ColumnDefinitions="Auto,Auto,Auto,*,Auto,200">
+
+                <Button Grid.Column="0"
+                        Content="▶"
+                        FontSize="18"
+                        Click="Play_Click"/>
+
+                <Button Grid.Column="1"
+                        Content="⏸"
+                        FontSize="18"
+                        Click="Pause_Click"/>
+
+                <Button Grid.Column="2"
+                        Content="⏹"
+                        FontSize="18"
+                        Click="Stop_Click"/>
+
+                <TextBlock Grid.Column="4"
+                           Text="00:00.000"
+                           VerticalAlignment="Center"
+                           Margin="15,0"/>
+
+                <StackPanel Grid.Column="5"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center">
+
+                    <TextBlock Text="Громкость"
+                               VerticalAlignment="Center"
+                               Margin="5"/>
+
+                    <Slider Minimum="0"
+                            Maximum="100"
+                            Value="100"
+                            Width="120"
+                            VerticalAlignment="Center"/>
+
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
+
+        <!-- 4. Основная рабочая область -->
+        <Grid Grid.Row="3"
+              ColumnDefinitions="*,280"
+              Margin="10">
+
+            <!-- Область волновой формы -->
+            <Border Grid.Column="0"
+                    Background="#151515"
+                    BorderBrush="#404040"
+                    BorderThickness="1"
+                    CornerRadius="4"
+                    Margin="0,0,10,0">
+
+                <Grid RowDefinitions="Auto,*">
+
+                    <!-- Заголовок аудиофайла -->
+                    <Border Background="#252525"
+                            Padding="8">
+
+                        <TextBlock Text="Файл не загружен"
+                                   FontWeight="Bold"/>
+
+                    </Border>
+
+                    <!-- Рабочая область -->
+                    <Grid Grid.Row="1"
+                          RowDefinitions="Auto,*">
+
+                        <!-- Временная шкала -->
+                        <TextBlock Grid.Row="0"
+                                   Text="00:00        00:30        01:00        01:30        02:00"
+                                   Foreground="#888888"
+                                   Margin="10"
+                                   FontSize="12"/>
+
+                        <!-- Область отображения волны -->
+                        <Border Grid.Row="1"
+                                Background="#181818"
+                                Margin="10">
+
+                            <StackPanel VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        Spacing="10">
+
+                                <TextBlock Text="Волновая форма аудио"
+                                           HorizontalAlignment="Center"
+                                           Foreground="#777777"
+                                           FontSize="20"/>
+
+                                <TextBlock Text="Откройте аудиофайл для отображения waveform"
+                                           HorizontalAlignment="Center"
+                                           Foreground="#555555"/>
+
+                            </StackPanel>
+
+                        </Border>
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Панель информации -->
+            <Border Grid.Column="1"
+                    Background="#252526"
+                    Padding="12"
+                    CornerRadius="4">
+
+                <StackPanel Spacing="12">
+
+                    <TextBlock Text="Информация об аудио"
+                               FontSize="18"
+                               FontWeight="Bold"/>
+
+                    <Separator/>
+
+                    <TextBlock Text="Частота дискретизации"/>
+
+                    <TextBlock Text="—"
+                               Foreground="#4FC3F7"
+                               FontSize="16"/>
+
+                    <TextBlock Text="Количество каналов"/>
+
+                    <TextBlock Text="—"
+                               Foreground="#4FC3F7"
+                               FontSize="16"/>
+
+                    <TextBlock Text="Длительность"/>
+
+                    <TextBlock Text="00:00.000"
+                               Foreground="#4FC3F7"
+                               FontSize="16"/>
+
+                    <TextBlock Text="Размер файла"/>
+
+                    <TextBlock Text="—"
+                               Foreground="#4FC3F7"
+                               FontSize="16"/>
+
+                    <Separator/>
+
+                    <TextBlock Text="Выделение"
+                               FontSize="18"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Text="Начало: —"/>
+
+                    <TextBlock Text="Конец: —"/>
+
+                    <TextBlock Text="Длительность: —"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </Grid>
+
+        <!-- 5. Строка состояния -->
+        <Border Grid.Row="4"
+                Background="#292929"
+                Padding="8">
+
+            <TextBlock x:Name="StatusText"
+                       Text="Готово к работе"
+                       Foreground="#AAAAAA"/>
+
+        </Border>
+
+    </Grid>
+
+</Window>

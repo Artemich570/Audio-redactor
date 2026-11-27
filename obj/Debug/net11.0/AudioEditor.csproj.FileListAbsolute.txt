@@ -88,3 +88,4 @@ D:\Projects\AudioEditor\obj\Debug\net11.0\refint\AudioEditor.dll
 D:\Projects\AudioEditor\obj\Debug\net11.0\AudioEditor.pdb
 D:\Projects\AudioEditor\obj\Debug\net11.0\AudioEditor.genruntimeconfig.cache
 D:\Projects\AudioEditor\obj\Debug\net11.0\ref\AudioEditor.dll
+D:\Projects\AudioEditor\obj\Debug\net11.0\AudioEditor.sourcelink.json
