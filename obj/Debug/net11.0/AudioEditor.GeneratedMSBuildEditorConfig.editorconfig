@@ -8,11 +8,30 @@ build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassNa
 build_property.AvaloniaNameGeneratorAttachDevTools = true
 build_property.AvaloniaPropertyGeneratorIsEnabled = true
 build_property.AvaloniaUseCompiledBindingsByDefault = true
+build_property.AvaloniaUseCompiledBindingsByDefault = true
+build_property.AvaloniaMainPackageVersion = 12.2.0
 build_property.AvaloniaMainPackageVersion = 12.2.0
 build_property.AvaloniaPreviewerNetCoreToolPath = C:\Users\Artem\.nuget\packages\avalonia\12.2.0\buildTransitive\\..\tools\net8.0\designer\Avalonia.Designer.HostApp.dll
 build_property.AvaloniaResourcePaths = D:\Projects\AudioEditor\App.axaml,D:\Projects\AudioEditor\Views\MainWindow.axaml
 build_property.TargetFramework = net11.0
+build_property.TargetFramework = net11.0
 build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.RuntimeIdentifier = 
+build_property.AppHostRuntimeIdentifier = win-x64
+build_property.DefaultAppHostRuntimeIdentifier = win-x64
+build_property.NETCoreSdkPortableRuntimeIdentifier = win-x64
+build_property.IsTestProject = 
+build_property.HasAvaloniaDiagnosticsSupport = true
+build_property._AvnB64ProjectAssetsFile = RDpcUHJvamVjdHNcQXVkaW9FZGl0b3Jcb2JqXHByb2plY3QuYXNzZXRzLmpzb24=
+build_property._AvnB64ProjectDepsFilePath = 
+build_property._AvnB64ProjectRuntimeConfigFilePath = 
+build_property._AvnB64IntermediateOutputPath = b2JqXERlYnVnXG5ldDExLjBc
+build_property._AvnB64PublishDir = YmluXERlYnVnXG5ldDExLjBccHVibGlzaFw=
+build_property._AvnB64AvaloniaPreviewerNetCoreToolPath = QzpcVXNlcnNcQXJ0ZW1cLm51Z2V0XHBhY2thZ2VzXGF2YWxvbmlhXDEyLjIuMFxidWlsZFRyYW5zaXRpdmVcXC4uXHRvb2xzXG5ldDguMFxkZXNpZ25lclxBdmFsb25pYS5EZXNpZ25lci5Ib3N0QXBwLmRsbA==
+build_property._AvnLicenseKeyProducts = 
+build_property._AvnHasLicenseKey = 
+build_property.AvaloniaUILicenseDisableTask = 
 build_property.TargetFrameworkVersion = v11.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 

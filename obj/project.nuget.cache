@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xBEWcXEIBJE=",
+  "dgSpecHash": "2j5rfMmDQGg=",
   "success": true,
   "projectFilePath": "D:\\Projects\\AudioEditor\\AudioEditor.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,8 @@
     "C:\\Users\\Artem\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.119.4\\skiasharp.nativeassets.macos.3.119.4.nupkg.sha512",
     "C:\\Users\\Artem\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\3.119.4\\skiasharp.nativeassets.webassembly.3.119.4.nupkg.sha512",
     "C:\\Users\\Artem\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.119.4\\skiasharp.nativeassets.win32.3.119.4.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\soundflow\\1.4.2\\soundflow.1.4.2.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\soundflow.codecs.ffmpeg\\1.4.2\\soundflow.codecs.ffmpeg.1.4.2.nupkg.sha512",
     "C:\\Users\\Artem\\.nuget\\packages\\tmds.dbus.protocol\\0.94.1\\tmds.dbus.protocol.0.94.1.nupkg.sha512"
   ],
   "logs": []

@@ -29,7 +29,6 @@
             <Setter Property="Foreground" Value="#EEEEEE"/>
         </Style>
 
-
     </Window.Styles>
 
     <Grid RowDefinitions="Auto,Auto,Auto,*,Auto,Auto">

@@ -12,7 +12,9 @@
           "Avalonia.Desktop": "12.2.0",
           "Avalonia.Fonts.Inter": "12.2.0",
           "Avalonia.Themes.Fluent2": "12.2.0",
-          "AvaloniaUI.DiagnosticsSupport": "2.2.3"
+          "AvaloniaUI.DiagnosticsSupport": "2.2.3",
+          "SoundFlow": "1.4.2",
+          "SoundFlow.Codecs.FFMpeg": "1.4.2"
         },
         "runtime": {
           "AudioEditor.dll": {}
@@ -567,6 +569,211 @@
           }
         }
       },
+      "SoundFlow/1.4.2": {
+        "runtime": {
+          "lib/net8.0/SoundFlow.dll": {
+            "assemblyVersion": "1.4.2.0",
+            "fileVersion": "1.4.2.0",
+            "localPath": "SoundFlow.dll"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libminiaudio.so": {
+            "rid": "android-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/android-arm/native/libminiaudio.so"
+          },
+          "runtimes/android-arm64/native/libminiaudio.so": {
+            "rid": "android-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/android-arm64/native/libminiaudio.so"
+          },
+          "runtimes/android-x64/native/libminiaudio.so": {
+            "rid": "android-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/android-x64/native/libminiaudio.so"
+          },
+          "runtimes/freebsd-arm64/native/libminiaudio.so": {
+            "rid": "freebsd-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/freebsd-arm64/native/libminiaudio.so"
+          },
+          "runtimes/freebsd-x64/native/libminiaudio.so": {
+            "rid": "freebsd-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/freebsd-x64/native/libminiaudio.so"
+          },
+          "runtimes/ios-arm64/native/miniaudio.framework/Info.plist": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/ios-arm64/native/miniaudio.framework/Info.plist"
+          },
+          "runtimes/ios-arm64/native/miniaudio.framework/miniaudio": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/ios-arm64/native/miniaudio.framework/miniaudio"
+          },
+          "runtimes/linux-arm/native/libminiaudio.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm/native/libminiaudio.so"
+          },
+          "runtimes/linux-arm64/native/libminiaudio.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm64/native/libminiaudio.so"
+          },
+          "runtimes/linux-x64/native/libminiaudio.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-x64/native/libminiaudio.so"
+          },
+          "runtimes/osx-arm64/native/libminiaudio.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx-arm64/native/libminiaudio.dylib"
+          },
+          "runtimes/osx-x64/native/libminiaudio.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx-x64/native/libminiaudio.dylib"
+          },
+          "runtimes/win-arm64/native/miniaudio.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/miniaudio.dll"
+          },
+          "runtimes/win-x64/native/miniaudio.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/miniaudio.dll"
+          },
+          "runtimes/win-x86/native/miniaudio.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/miniaudio.dll"
+          }
+        }
+      },
+      "SoundFlow.Codecs.FFMpeg/1.4.2": {
+        "dependencies": {
+          "SoundFlow": "1.4.2"
+        },
+        "runtime": {
+          "lib/net8.0/SoundFlow.Codecs.FFMpeg.dll": {
+            "assemblyVersion": "1.4.2.0",
+            "fileVersion": "1.4.2.0",
+            "localPath": "SoundFlow.Codecs.FFMpeg.dll"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libsoundflow-ffmpeg.so": {
+            "rid": "android-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/android-arm/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/android-arm64/native/libsoundflow-ffmpeg.so": {
+            "rid": "android-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/android-arm64/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/android-x64/native/libsoundflow-ffmpeg.so": {
+            "rid": "android-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/android-x64/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/freebsd-arm64/native/libsoundflow-ffmpeg.so": {
+            "rid": "freebsd-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/freebsd-arm64/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/freebsd-x64/native/libsoundflow-ffmpeg.so": {
+            "rid": "freebsd-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/freebsd-x64/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/Info.plist": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/Info.plist"
+          },
+          "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/soundflow-ffmpeg": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/soundflow-ffmpeg"
+          },
+          "runtimes/linux-arm/native/libsoundflow-ffmpeg.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/linux-arm64/native/libsoundflow-ffmpeg.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm64/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/linux-x64/native/libsoundflow-ffmpeg.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-x64/native/libsoundflow-ffmpeg.so"
+          },
+          "runtimes/osx-arm64/native/libsoundflow-ffmpeg.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx-arm64/native/libsoundflow-ffmpeg.dylib"
+          },
+          "runtimes/osx-x64/native/libsoundflow-ffmpeg.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx-x64/native/libsoundflow-ffmpeg.dylib"
+          },
+          "runtimes/win-arm64/native/soundflow-ffmpeg.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/soundflow-ffmpeg.dll"
+          },
+          "runtimes/win-x64/native/soundflow-ffmpeg.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/soundflow-ffmpeg.dll"
+          },
+          "runtimes/win-x86/native/soundflow-ffmpeg.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/soundflow-ffmpeg.dll"
+          }
+        }
+      },
       "Tmds.DBus.Protocol/0.94.1": {
         "runtime": {
           "lib/net9.0/Tmds.DBus.Protocol.dll": {
@@ -751,6 +958,20 @@
       "sha512": "sha512-XOpbx/4CReO2wYsq2s6rbvdauc6dntG4Zv499sHGTJ87bwZaFXszFkwql3+FIZMc8kUPeaj3Mx2ezIJmo8a1Kg==",
       "path": "skiasharp.nativeassets.win32/3.119.4",
       "hashPath": "skiasharp.nativeassets.win32.3.119.4.nupkg.sha512"
+    },
+    "SoundFlow/1.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f9rldhD+hKQ+4TsOXHpXQxZdwausqUECGKmfpUCRwhbhXSWwKSR5v5uLulTpHdT8ZQmq/58gKep/wPuO9Qd02A==",
+      "path": "soundflow/1.4.2",
+      "hashPath": "soundflow.1.4.2.nupkg.sha512"
+    },
+    "SoundFlow.Codecs.FFMpeg/1.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EgIruCV+Z913Urp+gTETPujMkwfDbug8PxYK5Cekq4JDXw+7nMA5Q1iVu5f8rPQjXFRU3xKcGVCg+0jX91ZkHQ==",
+      "path": "soundflow.codecs.ffmpeg/1.4.2",
+      "hashPath": "soundflow.codecs.ffmpeg.1.4.2.nupkg.sha512"
     },
     "Tmds.DBus.Protocol/0.94.1": {
       "type": "package",

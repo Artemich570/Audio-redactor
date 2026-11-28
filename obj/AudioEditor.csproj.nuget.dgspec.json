@@ -71,6 +71,14 @@
             "AvaloniaUI.DiagnosticsSupport": {
               "target": "Package",
               "version": "[2.2.3, )"
+            },
+            "SoundFlow": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SoundFlow.Codecs.FFMpeg": {
+              "target": "Package",
+              "version": "[1.4.2, )"
             }
           },
           "imports": [

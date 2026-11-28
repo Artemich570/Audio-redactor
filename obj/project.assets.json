@@ -625,6 +625,159 @@
           }
         }
       },
+      "SoundFlow/1.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/SoundFlow.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SoundFlow.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/freebsd-arm64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "freebsd-arm64"
+          },
+          "runtimes/freebsd-x64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "freebsd-x64"
+          },
+          "runtimes/ios-arm64/native/miniaudio.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios-arm64"
+          },
+          "runtimes/ios-arm64/native/miniaudio.framework/miniaudio": {
+            "assetType": "native",
+            "rid": "ios-arm64"
+          },
+          "runtimes/linux-arm/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libminiaudio.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libminiaudio.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/miniaudio.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/miniaudio.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/miniaudio.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SoundFlow.Codecs.FFMpeg/1.4.2": {
+        "type": "package",
+        "dependencies": {
+          "SoundFlow": "1.4.2"
+        },
+        "compile": {
+          "lib/net8.0/SoundFlow.Codecs.FFMpeg.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SoundFlow.Codecs.FFMpeg.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/freebsd-arm64/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "freebsd-arm64"
+          },
+          "runtimes/freebsd-x64/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "freebsd-x64"
+          },
+          "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios-arm64"
+          },
+          "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/soundflow-ffmpeg": {
+            "assetType": "native",
+            "rid": "ios-arm64"
+          },
+          "runtimes/linux-arm/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libsoundflow-ffmpeg.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libsoundflow-ffmpeg.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libsoundflow-ffmpeg.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/soundflow-ffmpeg.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/soundflow-ffmpeg.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/soundflow-ffmpeg.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Tmds.DBus.Protocol/0.94.1": {
         "type": "package",
         "compile": {
@@ -1439,6 +1592,73 @@
         "skiasharp.nativeassets.win32.nuspec"
       ]
     },
+    "SoundFlow/1.4.2": {
+      "sha512": "f9rldhD+hKQ+4TsOXHpXQxZdwausqUECGKmfpUCRwhbhXSWwKSR5v5uLulTpHdT8ZQmq/58gKep/wPuO9Qd02A==",
+      "type": "package",
+      "path": "soundflow/1.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTING.md",
+        "LICENSE.md",
+        "README.md",
+        "SOUNDFLOW-THIRD-PARTY-NOTICES.txt",
+        "SoundFlow.targets",
+        "lib/net8.0/SoundFlow.dll",
+        "lib/net8.0/SoundFlow.xml",
+        "logo.png",
+        "runtimes/android-arm/native/libminiaudio.so",
+        "runtimes/android-arm64/native/libminiaudio.so",
+        "runtimes/android-x64/native/libminiaudio.so",
+        "runtimes/freebsd-arm64/native/libminiaudio.so",
+        "runtimes/freebsd-x64/native/libminiaudio.so",
+        "runtimes/ios-arm64/native/miniaudio.framework/Info.plist",
+        "runtimes/ios-arm64/native/miniaudio.framework/miniaudio",
+        "runtimes/linux-arm/native/libminiaudio.so",
+        "runtimes/linux-arm64/native/libminiaudio.so",
+        "runtimes/linux-x64/native/libminiaudio.so",
+        "runtimes/osx-arm64/native/libminiaudio.dylib",
+        "runtimes/osx-x64/native/libminiaudio.dylib",
+        "runtimes/win-arm64/native/miniaudio.dll",
+        "runtimes/win-x64/native/miniaudio.dll",
+        "runtimes/win-x86/native/miniaudio.dll",
+        "soundflow.1.4.2.nupkg.sha512",
+        "soundflow.nuspec"
+      ]
+    },
+    "SoundFlow.Codecs.FFMpeg/1.4.2": {
+      "sha512": "EgIruCV+Z913Urp+gTETPujMkwfDbug8PxYK5Cekq4JDXw+7nMA5Q1iVu5f8rPQjXFRU3xKcGVCg+0jX91ZkHQ==",
+      "type": "package",
+      "path": "soundflow.codecs.ffmpeg/1.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "SOUNDFLOW-THIRD-PARTY-NOTICES.txt",
+        "SoundFlow.Codecs.FFMpeg.targets",
+        "lib/net8.0/SoundFlow.Codecs.FFMpeg.dll",
+        "lib/net8.0/SoundFlow.Codecs.FFMpeg.xml",
+        "logo.png",
+        "runtimes/android-arm/native/libsoundflow-ffmpeg.so",
+        "runtimes/android-arm64/native/libsoundflow-ffmpeg.so",
+        "runtimes/android-x64/native/libsoundflow-ffmpeg.so",
+        "runtimes/freebsd-arm64/native/libsoundflow-ffmpeg.so",
+        "runtimes/freebsd-x64/native/libsoundflow-ffmpeg.so",
+        "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/Info.plist",
+        "runtimes/ios-arm64/native/soundflow-ffmpeg.framework/soundflow-ffmpeg",
+        "runtimes/linux-arm/native/libsoundflow-ffmpeg.so",
+        "runtimes/linux-arm64/native/libsoundflow-ffmpeg.so",
+        "runtimes/linux-x64/native/libsoundflow-ffmpeg.so",
+        "runtimes/osx-arm64/native/libsoundflow-ffmpeg.dylib",
+        "runtimes/osx-x64/native/libsoundflow-ffmpeg.dylib",
+        "runtimes/win-arm64/native/soundflow-ffmpeg.dll",
+        "runtimes/win-x64/native/soundflow-ffmpeg.dll",
+        "runtimes/win-x86/native/soundflow-ffmpeg.dll",
+        "soundflow.codecs.ffmpeg.1.4.2.nupkg.sha512",
+        "soundflow.codecs.ffmpeg.nuspec"
+      ]
+    },
     "Tmds.DBus.Protocol/0.94.1": {
       "sha512": "11YMr7FnAbL83bQmVxlhbIKHvSLxjO81D12Ej0QMSGXMDTxNA9MTOa4MQxx43nv5el/efuPHwzyrj6a5ha2gug==",
       "type": "package",
@@ -1469,7 +1689,9 @@
       "Avalonia.Desktop >= 12.2.0",
       "Avalonia.Fonts.Inter >= 12.2.0",
       "Avalonia.Themes.Fluent2 >= 12.2.0",
-      "AvaloniaUI.DiagnosticsSupport >= 2.2.3"
+      "AvaloniaUI.DiagnosticsSupport >= 2.2.3",
+      "SoundFlow >= 1.4.2",
+      "SoundFlow.Codecs.FFMpeg >= 1.4.2"
     ]
   },
   "packageFolders": {
@@ -1543,6 +1765,14 @@
           "AvaloniaUI.DiagnosticsSupport": {
             "target": "Package",
             "version": "[2.2.3, )"
+          },
+          "SoundFlow": {
+            "target": "Package",
+            "version": "[1.4.2, )"
+          },
+          "SoundFlow.Codecs.FFMpeg": {
+            "target": "Package",
+            "version": "[1.4.2, )"
           }
         },
         "imports": [
